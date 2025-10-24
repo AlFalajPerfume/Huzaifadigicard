@@ -1,0 +1,262 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #3288f1, #2f52ed);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(25px);
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+  width: 360px;
+  padding: 30px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* Banner + Avatar */
+.banner-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.avatar {
+  width: 110px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  position: absolute;
+  bottom: -55px;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Profile */
+.profile {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.profile h1 {
+  font-size: 1.4rem;
+}
+
+.profile h2 {
+  font-size: 1rem;
+  color: #e9d5ff;
+  margin-bottom: 8px;
+}
+
+.profile .desc {
+  font-size: 0.9rem;
+  color: #e0e7ff;
+  margin-bottom: 20px;
+}
+
+/* Circular Icon Buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+
+.btn-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-circle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Circular Button Colors */
+.btn-circle.call { background: #2d3436; }
+.btn-circle.whatsapp { background: #25D366; }
+.btn-circle.email { background: #6c5ce7; }
+.btn-circle.website { background: #0984e3; }
+.btn-circle.instagram { background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4); }
+.btn-circle.wechat { background: linear-gradient(90deg,#09b83e,#00a62c); }
+
+/* Gallery */
+.gallery h3 { margin-bottom: 10px; font-weight: 600; }
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 10px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+  width: 300%;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+/* Slider navigation buttons */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.25);
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav:hover { background: rgba(255,255,255,0.5); }
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Map & Share sections */
+.map, .share { margin-top: 25px; }
+.map h3, .share h3 { margin-bottom: 10px; font-weight: 600; }
+
+/* Form */
+form { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea { min-height: 100px; resize: vertical; }
+
+.btn-share {
+  background: linear-gradient(90deg,#1e40af,#3b82f6);
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn-share:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+#responseMsg { margin-top: 8px; color: #bbf7d0; }
+
+/* Footer */
+footer { margin: 25px 0 10px; text-align: center; font-size: 0.85rem; opacity: 0.9; }
+
+/* WeChat page */
+.wechat-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.wechat-page h2 { font-size: 1.5rem; margin-bottom: 10px; }
+.wechat-page p { font-size: 0.9rem; color: #e0e7ff; margin-bottom: 20px; }
+.wechat-page .wechat-qr {
+  width: 250px;
+  height: 250px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+/* Floating Save Contact Button with Bounce */
+.btn.save-contact {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #5a2ce1, #7c3aed);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  animation: bounce-glow 1.5s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(122,82,255,0.7);
+  text-decoration: none;
+}
+
+.btn.save-contact i {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+.btn.save-contact:hover {
+  transform: scale(1.15) translateY(-3px);
+  box-shadow: 0 0 25px rgba(122,82,255,1);
+}
+
+@keyframes pulse{
+  0% { box-shadow: 0 0 10px rgba(122, 82, 255, 0.7); }
+  50% { box-shadow: 0 0 20px rgba(122, 82, 255, 1); }
+  100% { box-shadow: 0 0 10px rgba(122, 82, 255, 0.7); }
+}
